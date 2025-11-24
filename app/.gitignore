@@ -1,0 +1,18 @@
+# Python virtual environments
+venv/
+.venv/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# VS Code
+.vscode/
+
+# Environment variables
+.env
+
+# macOS hidden files
+.DS_Store

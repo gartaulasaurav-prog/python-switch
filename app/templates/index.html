@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>AI Summarizer – Week 1</title>
+    <nav>
+    <a href="/">Home</a> |
+    <a href="/history">History</a>
+</nav>
+<hr>
+</head>
+<body>
+    <h1>AI Summarizer – Week 1</h1>
+
+    <form action="/summarize" method="post">
+  <label for="text">Input Text:</label><br />
+  <textarea
+    id="text"
+    name="text"
+    rows="8"
+    cols="60"
+    placeholder="Paste your text here..."
+  ></textarea>
+  <br /><br />
+
+  <!-- New: summary length selector -->
+  <label for="length">Summary length:</label>
+  <select id="length" name="length">
+    <option value="short">Short</option>
+    <option value="medium" selected>Medium</option>
+    <option value="long">Long</option>
+  </select>
+
+  <br /><br />
+  <button type="submit">Summarize</button>
+</form>
+<p><a href="/history">View Saved Summaries</a></p>
+
+
+</body>
+</html>
